@@ -3,12 +3,10 @@
 import type React from 'react'
 
 import { useState } from 'react'
-import { useRouter } from 'next/navigation'
 
 export default function LoginPage() {
   const [password, setPassword] = useState('')
   const [error, setError] = useState<string | null>(null)
-  const router = useRouter()
 
   async function onSubmit(e: React.FormEvent) {
     e.preventDefault()
