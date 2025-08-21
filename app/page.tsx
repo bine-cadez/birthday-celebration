@@ -224,6 +224,14 @@ export default function BirthdayProgram() {
           </Card>
         </div>
       </section>
+      <div className='w-full text-center pb-8'>
+        <p className='text-sm text-slate-500 dark:text-slate-400'>
+          Powered by{' '}
+          <a href='https://www.paideia-events.si' target='_blank'>
+            Paideia
+          </a>
+        </p>
+      </div>
     </div>
   )
 }

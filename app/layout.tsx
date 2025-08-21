@@ -20,7 +20,7 @@ const openSans = Open_Sans({
 })
 
 export const metadata: Metadata = {
-  title: 'Praznovanje 🎉',
+  title: 'Praznovanje',
 }
 
 export default function RootLayout({
