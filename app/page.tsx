@@ -55,8 +55,6 @@ const programItems = [
     day: 'Sobota, 6. september',
     time: '8:00–11:00',
     title: 'Zajtrk',
-    description:
-      'Hotelska restavracija / hotelska terasa - odvisno od vremena 🍽️',
     icon: <Utensils className='h-5 w-5' />,
     color: 'bg-slate-600',
   },
@@ -76,7 +74,7 @@ const programItems = [
     time: '19:00',
     title: 'Večerja in program',
     description:
-      'Še eno presenečenje zame... in za vas 🎤🎶\n*Lokacija: blizu odra – obljubim, da boste imeli najboljši pogled! A ne bi že tukaj napisali Golf hiša?',
+      'Še eno presenečenje zame... in za vas 🎤🎶\n*Lokacija: blizu odra – obljubim, da boste imeli najboljši pogled!',
     icon: <Camera className='h-5 w-5' />,
     color: 'bg-slate-600',
   },
@@ -85,7 +83,6 @@ const programItems = [
     day: 'Nedelja, 7. september',
     time: '8:00–11:00',
     title: 'Zajtrk',
-    description: 'Hotelska restavracija ☕',
     icon: <Utensils className='h-5 w-5' />,
     color: 'bg-slate-600',
   },
@@ -110,7 +107,7 @@ export default function BirthdayProgram() {
           <div className='bg-white/80 dark:bg-slate-900/80 backdrop-blur-sm rounded-2xl p-4 md:p-8 shadow-2xl border border-slate-200/50 dark:border-slate-700/50'>
             <div className='text-center mb-6 md:mb-8'>
               <h1 className='text-3xl md:text-5xl font-black text-slate-700 dark:text-slate-200 mb-4 tracking-tight'>
-                🎉 Dobrodošli na mojem praznovanju! 🎉
+                🎉 Dobrodošli na moji 50tki! 🎉
               </h1>
               <div className='text-base md:text-xl text-slate-600 dark:text-slate-300 font-medium space-y-2'>
                 <p>Dragi prijatelji! ❤️</p>

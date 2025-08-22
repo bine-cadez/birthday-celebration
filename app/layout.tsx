@@ -21,6 +21,16 @@ const openSans = Open_Sans({
 
 export const metadata: Metadata = {
   title: 'Praznovanje',
+  description: 'Dobrodošli na moji 50tki!',
+  openGraph: {
+    title: 'Praznovanje',
+    description: 'Dobrodošli na moji 50tki!',
+    images: [{ url: '/og-viber.jpg', width: 1200, height: 630 }],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    images: ['/og-viber.jpg'],
+  },
 }
 
 export default function RootLayout({
@@ -43,7 +53,17 @@ html {
 }
         `}</style>
       </head>
-      <body>{children}</body>
+      <body>
+        <img
+          src='/og-viber.jpg'
+          alt=''
+          width={1200}
+          height={630}
+          style={{ display: 'none' }}
+          aria-hidden='true'
+        />
+        {children}
+      </body>
     </html>
   )
 }
