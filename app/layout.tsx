@@ -20,21 +20,18 @@ const openSans = Open_Sans({
 })
 
 export const metadata: Metadata = {
+  metadataBase: new URL('https://bb50.si'),
   title: 'Praznovanje',
   description: 'Dobrodošli na moji 50tki!',
   openGraph: {
     title: 'Praznovanje',
     description: 'Dobrodošli na moji 50tki!',
     type: 'website',
-    images: [
-      { url: 'https://bb50.si/opengraph-image.jpg', width: 1200, height: 630 },
-    ],
+    images: [{ url: '/opengraph-image.jpg', width: 1200, height: 630 }],
   },
   twitter: {
     card: 'summary_large_image',
-    images: [
-      { url: 'https://bb50.si/opengraph-image.jpg', width: 1200, height: 630 },
-    ],
+    images: [{ url: '/opengraph-image.jpg', width: 1200, height: 630 }],
   },
 }
 
@@ -60,7 +57,7 @@ html {
       </head>
       <body>
         <img
-          src='/og.jpg'
+          src='/opengraph-image.jpg'
           alt=''
           width={1200}
           height={630}
