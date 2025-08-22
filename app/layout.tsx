@@ -22,10 +22,10 @@ const openSans = Open_Sans({
 export const metadata: Metadata = {
   metadataBase: new URL('https://bb50.si'),
   title: 'Praznovanje',
-  description: 'Dobrodošli na moji 50tki!',
+  description: 'Dobrodošli na moji 50ki!',
   openGraph: {
     title: 'Praznovanje',
-    description: 'Dobrodošli na moji 50tki!',
+    description: 'Dobrodošli na moji 50ki!',
     type: 'website',
     images: [{ url: '/opengraph-image.jpg', width: 1200, height: 630 }],
   },

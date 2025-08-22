@@ -107,7 +107,7 @@ export default function BirthdayProgram() {
           <div className='bg-white/80 dark:bg-slate-900/80 backdrop-blur-sm rounded-2xl p-4 md:p-8 shadow-2xl border border-slate-200/50 dark:border-slate-700/50'>
             <div className='text-center mb-6 md:mb-8'>
               <h1 className='text-3xl md:text-5xl font-black text-slate-700 dark:text-slate-200 mb-4 tracking-tight'>
-                🎉 Dobrodošli na moji 50tki! 🎉
+                🎉 Dobrodošli na moji 50ki! 🎉
               </h1>
               <div className='text-base md:text-xl text-slate-600 dark:text-slate-300 font-medium space-y-2'>
                 <p>Dragi prijatelji! ❤️</p>
