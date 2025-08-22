@@ -53,7 +53,7 @@ const programItems = [
   {
     id: 'saturday-breakfast',
     day: 'Sobota, 6. september',
-    time: '9:30–11:00',
+    time: '8:00–11:00',
     title: 'Zajtrk',
     description:
       'Hotelska restavracija / hotelska terasa - odvisno od vremena 🍽️',
@@ -73,7 +73,7 @@ const programItems = [
   {
     id: 'saturday-dinner',
     day: 'Sobota, 6. september',
-    time: 'Večer (ura?)',
+    time: '19:00',
     title: 'Večerja in program',
     description:
       'Še eno presenečenje zame... in za vas 🎤🎶\n*Lokacija: blizu odra – obljubim, da boste imeli najboljši pogled! A ne bi že tukaj napisali Golf hiša?',
@@ -83,7 +83,7 @@ const programItems = [
   {
     id: 'sunday-breakfast',
     day: 'Nedelja, 7. september',
-    time: '9:30–11:00',
+    time: '8:00–11:00',
     title: 'Zajtrk',
     description: 'Hotelska restavracija ☕',
     icon: <Utensils className='h-5 w-5' />,
