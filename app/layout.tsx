@@ -3,6 +3,7 @@ import type { Metadata } from 'next'
 import { GeistSans } from 'geist/font/sans'
 import { GeistMono } from 'geist/font/mono'
 import { Montserrat, Open_Sans } from 'next/font/google'
+import { Analytics } from '@vercel/analytics/next'
 import './globals.css'
 
 const montserrat = Montserrat({
@@ -65,6 +66,7 @@ html {
           aria-hidden='true'
         />
         {children}
+        <Analytics />
       </body>
     </html>
   )
