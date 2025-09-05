@@ -15,87 +15,104 @@ import {
   ChevronDown,
   Users,
   Waves,
+  PartyPopper,
+  Bus,
 } from 'lucide-react'
 
 import HotelMap from '@/components/HotelMap'
 
-const programItems = [
+export const programItems = [
   {
-    id: 'friday-arrival',
-    day: 'Petek, 5. september',
-    time: '15:00+',
-    title: 'Prihodi & Check-in',
+    id: 'friday-checkin',
+    day: 'Petek',
+    time: '15:00–17:00',
+    title: 'Check-in (hotel & dogodek)',
     description:
-      'Prihod v hotel je možen od 15:00 naprej 🛎️\nOb hotelski recepciji bo tudi moja recepcija, kjer boste prejeli dodatne usmeritve in navodila.\n*Če bo soba pripravljena prej, vas bodo z veseljem sprejeli!',
-    icon: <Users className='h-5 w-5' />,
+      '✔️ Check-in na hotelski recepciji\n📍 Check-in na dogodek – v knjižnici 😊',
+    icon: <Users className="h-5 w-5" />,
     color: 'bg-slate-600',
   },
   {
-    id: 'friday-meeting',
-    day: 'Petek, 5. september',
-    time: '18:00',
-    title: 'Naše prvo srečanje',
-    description:
-      'Lokacija: apartma Henry Morgan\nZačnemo s kozarcem penine, prigrizki in objemi! 🍾🍇🍪\n*Dress code: sproščeno elegantno – "resort chic" 👗👕',
-    icon: <Gift className='h-5 w-5' />,
+    id: 'friday-henry-morgan',
+    day: 'Petek',
+    time: '18:00–22:00',
+    title: '🎤 Henry Morgan',
+    description: '📍 3. nadstropje (z dvigalom) – sledite usmeritvam',
+    icon: <Music className="h-5 w-5" />,
     color: 'bg-slate-600',
   },
   {
-    id: 'friday-surprise',
-    day: 'Petek, 5. september',
-    time: 'Zvečer',
-    title: 'Presenečenje...',
-    description:
-      'Zvečer nas čaka prav poseben program 🎶 – naj ostane skrivnost!\n*Jutri je še en dan, zato pametno razporedi moči 😊',
-    icon: <Music className='h-5 w-5' />,
+    id: 'friday-transfer-beach',
+    day: 'Petek',
+    time: '22:00',
+    title: '🚶‍♂️🚐 Transferji na hotelsko plažo',
+    description: 'Oddaljena 270 m, dostopna tudi peš 😊',
+    icon: <Bus className="h-5 w-5" />,
     color: 'bg-slate-600',
   },
+  {
+    id: 'friday-party',
+    day: 'Petek',
+    time: '22:30–1:00',
+    title: '🎉 Zabava s presenečenjem',
+    icon: <PartyPopper className="h-5 w-5" />,
+    color: 'bg-slate-600',
+  },
+
   {
     id: 'saturday-breakfast',
-    day: 'Sobota, 6. september',
+    day: 'Sobota',
     time: '8:00–11:00',
-    title: 'Zajtrk',
-    icon: <Utensils className='h-5 w-5' />,
+    title: '🍽️ Zajtrk',
+    description: 'Vila Athena – pod hotelskim bazenom',
+    icon: <Utensils className="h-5 w-5" />,
     color: 'bg-slate-600',
   },
   {
-    id: 'saturday-beach',
-    day: 'Sobota, 6. september',
+    id: 'saturday-beach-lunch',
+    day: 'Sobota',
     time: '10:00–17:00',
-    title: 'Beach & Chill with BBQ & Cocktails',
-    description:
-      'Plaža "Adults Zone" samo za nas\nSonce, morje, dobra hrana z žara in osvežilni koktajli 🍔🍹🌊',
-    icon: <Waves className='h-5 w-5' />,
+    title: '🌴 Druženje in kosilo na hotelski plaži (Adults Zone)',
+    icon: <Waves className="h-5 w-5" />,
     color: 'bg-slate-600',
   },
   {
-    id: 'saturday-dinner',
-    day: 'Sobota, 6. september',
+    id: 'saturday-transfer-dinner',
+    day: 'Sobota',
     time: '19:00',
-    title: 'Večerja in program',
-    description:
-      'Še eno presenečenje zame... in za vas 🎤🎶\n*Lokacija: blizu odra – obljubim, da boste imeli najboljši pogled!',
-    icon: <Camera className='h-5 w-5' />,
+    title: '🚶‍♀️🚐 Transferji na lokacijo večerje',
+    description: 'Oddaljena 550 m, dostopna tudi peš 😊',
+    icon: <Bus className="h-5 w-5" />,
     color: 'bg-slate-600',
   },
+  {
+    id: 'saturday-dinner-party',
+    day: 'Sobota',
+    time: '19:30–2:00',
+    title: '🍽️🎶 Večerja in zabava',
+    icon: <Utensils className="h-5 w-5" />,
+    color: 'bg-slate-600',
+  },
+
   {
     id: 'sunday-breakfast',
-    day: 'Nedelja, 7. september',
+    day: 'Nedelja',
     time: '8:00–11:00',
-    title: 'Zajtrk',
-    icon: <Utensils className='h-5 w-5' />,
+    title: '🍽️ Zajtrk',
+    description: 'Vila Athena – pod hotelskim bazenom',
+    icon: <Utensils className="h-5 w-5" />,
     color: 'bg-slate-600',
   },
   {
     id: 'sunday-checkout',
-    day: 'Nedelja, 7. september',
+    day: 'Nedelja',
     time: 'Do 12:00',
-    title: 'Slovo & odhodi',
-    description: 'Check-out do 12:00 🧳',
-    icon: <Users className='h-5 w-5' />,
+    title: '🧳 Check-out',
+    description: '',
+    icon: <Users className="h-5 w-5" />,
     color: 'bg-slate-600',
   },
-]
+];
 
 export default function BirthdayProgram() {
   return (
