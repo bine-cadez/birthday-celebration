@@ -136,15 +136,15 @@ export default function BirthdayProgram() {
             <div className='relative h-64 md:h-96 bg-slate-100 dark:bg-slate-800 rounded-xl overflow-hidden border-2 border-slate-300/30 dark:border-slate-600/30 mb-6'>
               <HotelMap />
               <div className='absolute inset-0 bg-gradient-to-t from-slate-900/20 to-transparent pointer-events-none' />
-              <div className='absolute top-4 left-4 bg-white/90 dark:bg-slate-900/90 backdrop-blur-sm p-3 rounded-lg pointer-events-none'>
-                <p className='text-sm font-semibold text-slate-800 dark:text-slate-200'>
-                  📍 18:00 - Henry Morgan Suite
+              <div className='hidden md:block left-1 absolute top-1 md:top-4 md:left-4 bg-white/90 dark:bg-slate-900/90 backdrop-blur-sm p-3 rounded-lg pointer-events-none'>
+                <p className='text-xs md:text-sm font-semibold text-slate-800 dark:text-slate-200'>
+                  📍 22:00 - Transferji na hotelsko plažo
                 </p>
-                <p className='text-sm pl-[15px] text-slate-800 dark:text-slate-200'>
-                  3. nadstopje (z dvigalom) - sledite usmeritvam
+                <p className='text-xs md:text-sm pl-[15px] text-slate-800 dark:text-slate-200'>
+                  Oddaljena 270 m, dostopna tudi peš
                 </p>
                 <a
-                  href='https://maps.app.goo.gl/DU5qjUvzwZBcaw1e6'
+                  href='https://maps.app.goo.gl/M81zKrvq9Kh14ZsJ9'
                   target='_blank'
                   className='text-xs underline pl-[15px] pointer-events-auto'
                   rel='noreferrer'
@@ -153,6 +153,22 @@ export default function BirthdayProgram() {
                 </a>
               </div>
             </div>
+            <div className='border-black/70 border block md:hidden mb-4 p-4 md:top-4 md:left-4 bg-white/90 dark:bg-slate-900/90 backdrop-blur-sm p-3 rounded-lg pointer-events-none'>
+                <p className='text-xs md:text-sm font-semibold text-slate-800 dark:text-slate-200'>
+                  📍 22:00 - Transferji na hotelsko plažo
+                </p>
+                <p className='text-xs md:text-sm pl-[15px] text-slate-800 dark:text-slate-200'>
+                  Oddaljena 270 m, dostopna tudi peš
+                </p>
+                <a
+                  href='https://maps.app.goo.gl/M81zKrvq9Kh14ZsJ9'
+                  target='_blank'
+                  className='text-xs underline pl-[15px] pointer-events-auto'
+                  rel='noreferrer'
+                >
+                  Odpri v Google Maps
+                </a>
+              </div>
 
             <div className='text-center'>
               <p className='text-sm text-slate-600 dark:text-slate-400 mb-2'>
