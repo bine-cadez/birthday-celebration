@@ -21,7 +21,7 @@ import {
 
 import HotelMap from '@/components/HotelMap'
 
-export const programItems = [
+const programItems = [
   {
     id: 'friday-checkin',
     day: 'Petek',
