@@ -138,10 +138,10 @@ export default function BirthdayProgram() {
               <div className='absolute inset-0 bg-gradient-to-t from-slate-900/20 to-transparent pointer-events-none' />
               <div className='absolute top-4 left-4 bg-white/90 dark:bg-slate-900/90 backdrop-blur-sm p-3 rounded-lg pointer-events-none'>
                 <p className='text-sm font-semibold text-slate-800 dark:text-slate-200'>
-                  📍 Hotel Kempinski Adriatic
+                  📍 18:00 - Henry Morgan Suite
                 </p>
                 <p className='text-sm pl-[15px] text-slate-800 dark:text-slate-200'>
-                  Alberi 300A, 52470
+                  3. nadstopje (z dvigalom) - sledite usmeritvam
                 </p>
                 <a
                   href='https://maps.app.goo.gl/DU5qjUvzwZBcaw1e6'
