@@ -188,12 +188,13 @@ export default function BirthdayProgram() {
               <div className='absolute inset-0 bg-gradient-to-t from-slate-900/20 to-transparent pointer-events-none' />
               <div className='hidden md:block left-1 absolute top-1 md:top-4 md:left-4 bg-white/90 dark:bg-slate-900/90 backdrop-blur-sm p-3 rounded-lg pointer-events-none'>
                 <p className='text-xs md:text-sm font-semibold text-slate-800 dark:text-slate-200'>
-                  📍 11:00 - Druženje in kosilo na hotelski plaži (Adults Zone)
+                  📍 19:00 - 🚶‍♀️🚐 Transferji na lokacijo večerje
                 </p>
                 <p className='text-xs md:text-sm pl-[15px] text-slate-800 dark:text-slate-200'>
+                  Oddaljena 550 m, dostopna tudi peš 😊
                 </p>
                 <a
-                  href='https://maps.app.goo.gl/M81zKrvq9Kh14ZsJ9'
+                  href='https://maps.app.goo.gl/8R5ByAp4u5Ge2trA9'
                   target='_blank'
                   className='text-xs underline pl-[15px] pointer-events-auto'
                   rel='noreferrer'
@@ -204,12 +205,13 @@ export default function BirthdayProgram() {
             </div>
             <div className='border-black/70 border block md:hidden mb-4 p-4 md:top-4 md:left-4 bg-white/90 dark:bg-slate-900/90 backdrop-blur-sm p-3 rounded-lg pointer-events-none'>
                 <p className='text-xs md:text-sm font-semibold text-slate-800 dark:text-slate-200'>
-                  📍 11:00 - Druženje in kosilo na hotelski plaži (Adults Zone)
+                  📍 19:00 - 🚶‍♀️🚐 Transferji na lokacijo večerje
                 </p>
                 <p className='text-xs md:text-sm pl-[15px] text-slate-800 dark:text-slate-200'>
+                  Oddaljena 550 m, dostopna tudi peš 😊
                 </p>
                 <a
-                  href='https://maps.app.goo.gl/M81zKrvq9Kh14ZsJ9'
+                  href='https://maps.app.goo.gl/8R5ByAp4u5Ge2trA9'
                   target='_blank'
                   className='text-xs underline pl-[15px] pointer-events-auto'
                   rel='noreferrer'
@@ -316,7 +318,6 @@ export default function BirthdayProgram() {
           </div>
 
           <div className="grid gap-6 md:gap-8">
-            {/* Dynamic Table Rendering */}
             {tables.map((table, index) => (
               <Card
                 key={table.name}
