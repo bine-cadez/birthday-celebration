@@ -52,7 +52,7 @@ export default function HotelMap() {
         type: 'Feature',
         properties: {},
         geometry: route.geometry, // LineString
-      } as any
+      } as GeoJSON.Feature<GeoJSON.LineString>
     }
 
     const drawRoute = async () => {
@@ -98,7 +98,7 @@ export default function HotelMap() {
             geometry: { type: 'Point', coordinates: GOLF_COORDS },
           },
         ],
-      } as any
+      } as GeoJSON.FeatureCollection
 
       if (!map.getSource('stops')) {
         map.addSource('stops', { type: 'geojson', data: points })
@@ -142,13 +142,15 @@ export default function HotelMap() {
 
         map.on('mouseenter', 'stops-fill', () => (map.getCanvas().style.cursor = 'pointer'))
         map.on('mouseleave', 'stops-fill', () => (map.getCanvas().style.cursor = ''))
-        map.on('click', 'stops-fill', (e: any) => {
+        map.on('click', 'stops-fill', (e: maplibregl.MapLayerMouseEvent) => {
           const f = e.features?.[0]
           if (!f) return
-          new maplibregl.Popup({ offset: 10 })
-            .setLngLat(f.geometry.coordinates as [number, number])
-            .setText(f.properties?.name || '')
-            .addTo(map)
+          if (f.geometry.type === 'Point' && Array.isArray((f.geometry as GeoJSON.Point).coordinates)) {
+            new maplibregl.Popup({ offset: 10 })
+              .setLngLat((f.geometry as GeoJSON.Point).coordinates as [number, number])
+              .setText(f.properties?.name || '')
+              .addTo(map)
+          }
         })
       }
     }
