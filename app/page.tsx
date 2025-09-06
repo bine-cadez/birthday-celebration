@@ -21,6 +21,56 @@ import {
 
 import HotelMap from '@/components/HotelMap'
 
+type Table = {
+  name: string
+  people: Array<string>
+}
+
+const tables: Table[] = [
+  {
+    name: "Miza 1",
+    people: ["Ema", "Inja", "Juš", "Neli", "Nik", "Tia"],
+  },
+  {
+    name: "Miza 2",
+    people: ["Blaž", "Boštjan", "Matej", "Mojca", "Nina", "Tina"],
+  },
+  {
+    name: "Miza 3",
+    people: ["Amela", "Andrej", "Irena", "Janez", "Marko", "Mitja", "Mojca"],
+  },
+  {
+    name: "Miza 4",
+    people: ["Aleš", "Bojana", "Borut", "Lea", "Martina", "Matevž"],
+  },
+  {
+    name: "Miza 5",
+    people: ["Ari", "Darija", "Darko", "Gašper", "Jerneja", "Saša", "Sašo", "Uroš"],
+  },
+  {
+    name: "Miza 6",
+    people: ["Jure", "Klemen", "Mateja", "Nina", "Simon", "Tadej", "Tina", "Urška"],
+  },
+  {
+    name: "Miza 7",
+    people: ["Barbara", "Katarina", "Luca", "Marinka", "Maša", "Mojca", "Uroš", "Vlaho"],
+  },
+  {
+    name: "Miza 8",
+    people: ["Katja", "Luka", "Luka", "Matej", "Renata", "Špela", "Tina", "Tomaž"],
+  },
+  {
+    name: "Miza 9",
+    people: ["Boštjan", "Jure", "Lara", "Mirjam", "Nataša", "Tilen"],
+  },
+  {
+    name: "Miza 10",
+    people: ["Alenka", "Brigita", "Marko", "Nejc", "Sašo", "Vesna"],
+  },
+  
+  
+]
+
 const programItems = [
   {
     id: 'friday-checkin',
@@ -168,17 +218,21 @@ export default function BirthdayProgram() {
                 </a>
               </div>
 
-            <div className='text-center'>
-              <p className='text-sm text-slate-600 dark:text-slate-400 mb-2'>
-                Pomaknite se navzdol za program
-              </p>
-              <ChevronDown className='h-6 w-6 text-slate-600 dark:text-slate-400 mx-auto animate-bounce' />
+            <div className='flex w-full justify-around items-center'>
+                <a href="#program" className='inline-flex items-center text-sm md:text-base font-medium text-slate-700 dark:text-slate-200 hover:underline'>
+                  🎊 Program
+                  <ChevronDown className='ml-1 h-4 w-4' />
+                </a>
+                <a href="#razporeditev" className='inline-flex items-center text-sm md:text-base font-medium text-slate-700 dark:text-slate-200 hover:underline'>
+                  🪑 Razporeditev za večerjo
+                  <ChevronDown className='ml-1 h-4 w-4' />
+                </a>
             </div>
           </div>
         </div>
       </section>
 
-      <section className='py-8 md:py-16 px-4'>
+      <section className='py-8 md:py-16 px-4' id="program">
         <div className='max-w-4xl mx-auto'>
           <div className='text-center mb-8 md:mb-12'>
             <h2 className='text-3xl md:text-4xl font-black text-slate-700 dark:text-slate-200 mb-4'>
@@ -252,6 +306,51 @@ export default function BirthdayProgram() {
           </Card>
         </div>
       </section>
+      <section id="razporeditev" className="py-8 md:py-16 px-4 bg-slate-50/50 dark:bg-slate-800/20">
+        <div className="max-w-4xl mx-auto">
+          <div className="text-center mb-8 md:mb-12">
+            <h2 className="text-3xl md:text-4xl font-black text-slate-700 dark:text-slate-200 mb-4">
+              🪑 Razporeditev 🪑
+            </h2>
+            <p className="text-base md:text-lg text-slate-600 dark:text-slate-300">Razporeditev po mizah</p>
+          </div>
+
+          <div className="grid gap-6 md:gap-8">
+            {/* Dynamic Table Rendering */}
+            {tables.map((table, index) => (
+              <Card
+                key={table.name}
+                className="bg-white/70 dark:bg-slate-900/70 backdrop-blur-sm border-2 border-slate-300/20 dark:border-slate-600/20 shadow-lg"
+              >
+                <CardHeader>
+                  <CardTitle className="text-xl md:text-2xl font-bold text-slate-700 dark:text-slate-200 flex items-center gap-3">
+                    <div
+                      className={`p-2 text-white rounded-full ${
+                        index % 3 === 0 ? "bg-slate-600" : index % 3 === 1 ? "bg-stone-600" : "bg-slate-700"
+                      }`}
+                    >
+                      <Users className="h-5 w-5" />
+                    </div>
+                    {table.name}
+                  </CardTitle>
+                </CardHeader>
+                <CardContent>
+                  <div className="grid grid-cols-1 md:grid-cols-2 gap-2">
+                    {table.people.map((person, personIndex) => (
+                      <div
+                        key={personIndex}
+                        className="text-sm md:text-base text-slate-600 dark:text-slate-300 p-2 bg-slate-100 dark:bg-slate-800 rounded"
+                      >
+                        {person}
+                      </div>
+                    ))}
+                  </div>
+                </CardContent>
+              </Card>
+            ))}
+          </div>
+        </div>
+      </section>
       <div className='w-full text-center pb-8'>
         <p className='text-sm text-slate-500 dark:text-slate-400'>
           Powered by{' '}
@@ -260,6 +359,7 @@ export default function BirthdayProgram() {
           </a>
         </p>
       </div>
+    
     </div>
   )
 }
